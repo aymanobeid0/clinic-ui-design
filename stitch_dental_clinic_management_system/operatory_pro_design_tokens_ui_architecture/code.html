@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#192f86", "tertiary-fixed-dim": "#8cd6ad", "surface-variant": "#e3e2e2", "on-error-container": "#93000a", tertiary: "#002918", "on-secondary-container": "#4f647d", "danger-tint": "#FEF3F2", warning: "#854D0E", "border-field": "#DEDEDE", "secondary-fixed": "#d1e4ff", error: "#ba1a1a", outline: "#757683", "error-container": "#ffdad6", "on-surface-variant": "#454652", danger: "#B42318", "surface-container-high": "#e8e8e8", "text-primary": "#111111", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#005234", "border-card": "#E5E5E5", "tertiary-fixed": "#a8f3c8", "surface-dim": "#dadada", "inverse-on-surface": "#f1f1f0", "on-error": "#ffffff", primary: "#001868", "on-tertiary-container": "#67b089", "on-background": "#1a1c1c", "on-primary": "#ffffff", "on-surface": "#1a1c1c", "on-primary-container": "#899cf8", "outline-variant": "#c5c5d3", "text-secondary": "#666666", "success-tint": "#ECFDF3", "tertiary-container": "#004128", "warning-cta": "#FACC15", "surface-container-low": "#f4f3f3", secondary: "#4b6079", "primary-tint": "#EEF1FA", "surface-container": "#eeeeee", "secondary-container": "#cce2ff", "surface-tint": "#4458af", "surface-container-lowest": "#ffffff", "inverse-primary": "#b9c3ff", "on-primary-fixed": "#001257", "on-secondary-fixed": "#041d32", "primary-hover": "#14266D", "on-primary-fixed-variant": "#2b3f95", "secondary-fixed-dim": "#b3c8e5", "warning-tint": "#FFFAEB", "surface-bright": "#faf9f9", "surface-container-highest": "#e3e2e2", background: "#faf9f9", surface: "#faf9f9", "border-divider": "#EDEDED", "on-secondary-fixed-variant": "#334860", "on-tertiary-fixed": "#002112", "inverse-surface": "#2f3131", "on-secondary": "#ffffff", "primary-fixed": "#dde1ff", "primary-fixed-dim": "#b9c3ff"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-lg": "1.25rem", gutter: "1rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-2xl": "1.75rem", "space-xl": "1.5rem", "margin-desktop": "1.75rem", "space-xs": "0.5rem", "space-sm": "0.75rem", margin: "1rem", "space-2xs": "0.25rem", "space-3xl": "2rem"}, fontFamily: {"body-lg-medium": ["Inter"], "label-md": ["Inter"], "body-md-medium": ["Inter"], display: ["Inter"], "display-mobile": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], headline: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"body-lg-medium": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "500"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "body-md-medium": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "500"}], display: ["30px", {lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-mobile": ["26px", {lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "400"}], "headline-md": ["20px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-lg": ["24px", {lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600"}], "label-sm": ["13px", {lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500"}], "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "0", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-20 z-50 flex flex-col items-center py-space-xl bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-center mb-space-2xl"><div class="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><img alt="Clean geometric minimalist dental clinic logo mark, an abstract tooth silhouette combined with subtle medical cross and gentle wave, vector graphic style, deep royal blue #192F86 and crisp white, elegant medical branding. Design context: - Primary color: #192f86
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VxebqNPzQKoreh1mfD3zBnwC4Q6SVLjBgHXnxqPjP4C7lPYbbnb6-UvqG68Oso5qVCNYoEpjr545v_O2WaNhtfqj-mIkS1xwPEsb69m4gV3XkaJc4KksayohY0qHZTS56BXGuwrOs6s-lNHODVzfn7NenCo6N1AJlJyInRGpq-GYqpVeuUPHN1sv-rbBLXMHDe4Bpcs7Gzg2KqgRT910xe1-_k10sqBD36SFj4rznphkY_5o511I3g26AV"/></div></div><nav class="flex-1 flex flex-col items-center gap-space-sm w-full px-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments" href="#" title="Calendar &amp; Appointments"><span class="material-symbols-outlined text-[24px]">calendar_today</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patient-records" href="#" title="Patients &amp; Clinical Records"><span class="material-symbols-outlined text-[24px]">group</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="imaging-diagnostics" href="#" title="Dental Imaging &amp; Diagnostics"><span class="material-symbols-outlined text-[24px]">medical_services</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="treatment-plans" href="#" title="Treatment Plans &amp; Procedures"><span class="material-symbols-outlined text-[24px]">dentistry</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="billing-ledger" href="#" title="Billing &amp; Ledger"><span class="material-symbols-outlined text-[24px]">payments</span></a></nav><div class="flex flex-col items-center gap-space-sm w-full px-space-xs pt-space-md"><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#" title="Clinic Settings"><span class="material-symbols-outlined text-[24px]">settings</span></a></div></aside><div class="pl-20 min-h-screen flex flex-col"><header class="fixed top-0 left-20 right-0 h-16 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-label-md text-label-md text-text-primary tracking-tight">DENTAL CLINIC OPERATORY</span><span class="font-label-sm text-label-sm text-text-secondary">Precision Surgical Suite A-1</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-1.5 rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.04)] gap-space-xs"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none w-56 lg:w-72" placeholder="Search chart #, patient, procedure..." type="text"/></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Emergency Flag" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-danger-tint hover:text-danger transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">emergency</span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1X792V6pCG92FPz1EHpXt2jI_foO_q56t6XUW43-7SGCmPSlNRsBRlrl7kZY5DPIX3vli43QwlWUVoIq1O_dblmER62gY_zVH8hM7tpjSnh3tN6DBfecQeBKp4f0Y7I2VA8SAe_tUdD6rEFH2w91mW2-w4PcKxLp-k4ugIfF8o8U9qez1rS317JF8KR6IPiNDB6lnIxlCd13w7Mv9qzQrr1XVxp11tjEpH_ni2iv4YwOJGvmSyLA30eSpI"/><div class="hidden sm:flex flex-col"><span class="font-label-md text-label-md text-text-primary">Dr. Evelyn Vance</span><span class="font-label-sm text-label-sm text-text-secondary">Lead Orthodontist</span></div></div></div></div></header><main class="relative pt-16 flex-1 w-full bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1380px] mx-auto px-margin-desktop py-space-xl flex flex-col gap-space-2xl">
+<!-- Header System Banner -->
+<section class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-2xl shadow-[0_4px_24px_rgba(25,47,134,0.06)] flex flex-col gap-space-lg">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary-tint via-secondary-container/40 to-transparent pointer-events-none blur-2xl"></div>
+<div class="relative flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-2xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            Class I Medical Dental Suite • Foundation 4.2
+          </div>
+<h1 class="font-display text-display text-text-primary tracking-tight">Operatory Pro — Design Tokens &amp; UI Architecture</h1>
+<p class="font-body-md text-body-md text-text-secondary">
+            Harmonized design language across Clinical Overview, Diagnostics, Treatment Plans, and Financial Ledger. Built for ergonomic chairside speed, zero visual fatigue, and AAA clinical legibility.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-tint text-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            4 Primary Screens Aligned
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">grid_goldenratio</span>
+            8pt / 4pt Spatial Scale
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-success-tint text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">contrast</span>
+            AAA Medical Contrast
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-warning-tint text-warning font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+            Soft Tactile 3D Float
+          </span>
+</div>
+</div>
+<!-- Live Clinical Context Switcher (Interactive Pills) -->
+<div class="relative pt-space-xs flex flex-wrap items-center gap-space-xs bg-surface-container-low/70 p-1.5 rounded-2xl">
+<span class="font-label-sm text-label-sm text-text-secondary pl-2 pr-1">Target Surface:</span>
+<button class="px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm transition-all" onclick="highlightSection('all')" type="button">Universal System</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface transition-all font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" onclick="highlightSection('colors')" type="button">01 Palette &amp; Semantics</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface transition-all font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" onclick="highlightSection('typography')" type="button">02 Dual-Script &amp; CDT</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface transition-all font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" onclick="highlightSection('elevation')" type="button">03 Elevation &amp; Rad</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface transition-all font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" onclick="highlightSection('components')" type="button">04 Operatory Molecules</button>
+</div>
+</section>
+<!-- SECTION 01: COLOR ARCHITECTURE & SWATCH MATRIX -->
+<section class="flex flex-col gap-space-md" id="sec-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">01</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Color Architecture &amp; Clinical Swatch Matrix</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Token Scope: Dental Operatory Precision</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 1. Primary Brand Core -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Primary Cobalt</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Brand Core</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="group p-3 rounded-xl bg-primary-container text-on-primary flex items-center justify-between shadow-sm cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Cobalt Main</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Primary Action</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono opacity-90">#192F86</span>
+</div>
+<div class="group p-3 rounded-xl bg-primary-hover text-on-primary flex items-center justify-between shadow-sm cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Hover / Active</span>
+<span class="font-label-sm text-label-sm opacity-80">Pressed State</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono opacity-90">#14266D</span>
+</div>
+<div class="group p-3 rounded-xl bg-primary-tint text-primary flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Primary Wash</span>
+<span class="font-label-sm text-label-sm opacity-80">Selected Card Fill</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#EEF1FA</span>
+</div>
+<div class="group p-3 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Surface Accent</span>
+<span class="font-label-sm text-label-sm opacity-80">Tooling Active</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#D3E4FD</span>
+</div>
+</div>
+</div>
+<!-- 2. Clinical Semantic Tokens -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Clinical Triage</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Semantic Alerts</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="group p-3 rounded-xl bg-danger-tint text-danger flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Medical Anaphylaxis</span>
+<span class="font-label-sm text-label-sm opacity-80">Severe Alert</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#B42318</span>
+</div>
+<div class="group p-3 rounded-xl bg-warning-tint text-warning flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Proposed / Caution</span>
+<span class="font-label-sm text-label-sm opacity-80">Needs Approval</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#B45309</span>
+</div>
+<div class="group p-3 rounded-xl bg-success-tint text-tertiary flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Completed / Paid</span>
+<span class="font-label-sm text-label-sm opacity-80">Verified Post-Op</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#176544</span>
+</div>
+<div class="group p-3 rounded-xl bg-secondary-container text-primary flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">AI Pathology Flag</span>
+<span class="font-label-sm text-label-sm opacity-80">Automated Scan</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-mono">#0369A1</span>
+</div>
+</div>
+</div>
+<!-- 3. Odontogram Condition Codes -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Odontogram Codes</span>
+<span class="font-label-sm text-label-sm text-text-secondary">32-Tooth Matrix</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="group p-3 rounded-xl bg-surface-container-low flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2.5">
+<span class="w-3.5 h-3.5 rounded-full bg-purple-500 shadow-sm"></span>
+<span class="font-label-md text-label-md text-on-surface">Crown / Zirconia</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#A855F7</span>
+</div>
+<div class="group p-3 rounded-xl bg-surface-container-low flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2.5">
+<span class="w-3.5 h-3.5 rounded-full bg-amber-500 shadow-sm"></span>
+<span class="font-label-md text-label-md text-on-surface">Endodontic / Gutta</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#EAB308</span>
+</div>
+<div class="group p-3 rounded-xl bg-surface-container-low flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2.5">
+<span class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm"></span>
+<span class="font-label-md text-label-md text-on-surface">Composite MO/DO</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#3B82F6</span>
+</div>
+<div class="group p-3 rounded-xl bg-surface-container-low flex items-center justify-between cursor-pointer transition-transform hover:scale-[1.02]">
+<div class="flex items-center gap-2.5">
+<span class="w-3.5 h-3.5 rounded-full bg-emerald-500 shadow-sm"></span>
+<span class="font-label-md text-label-md text-on-surface">Intact Sound Enamel</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#10B981</span>
+</div>
+</div>
+</div>
+<!-- 4. Canvas & Recessed Surfaces -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Cadence &amp; Inks</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Atmosphere</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="group p-3 rounded-xl bg-surface-bright flex items-center justify-between shadow-inner">
+<span class="font-label-md text-label-md text-on-surface">Canvas Foundation</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#F9F9F9</span>
+</div>
+<div class="group p-3 rounded-xl bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+<span class="font-label-md text-label-md text-on-surface">Operatory Card</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#FFFFFF</span>
+</div>
+<div class="group p-3 rounded-xl bg-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Well &amp; Track Fill</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">#EEEEEE</span>
+</div>
+<div class="group p-3 rounded-xl bg-primary text-on-primary flex items-center justify-between shadow-sm">
+<span class="font-label-md text-label-md">High-Grade Ink</span>
+<span class="font-label-sm text-label-sm opacity-90 font-mono">#001868</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: TYPOGRAPHY, TABULAR FIGURES & DUAL-SCRIPT -->
+<section class="flex flex-col gap-space-md" id="sec-typography">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">02</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Typography Standard &amp; Tabular CDT Codes</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Optical Alignment • Zero Number Jitter</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Scale specimen card -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-low">
+<span class="font-label-md text-label-md text-text-secondary">HIERARCHY SPECIMEN (INTER VARIABLE)</span>
+<span class="font-label-sm text-label-sm text-text-secondary">TOKEN MAPPING</span>
+</div>
+<!-- Display -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Display / Chairside Hero Metric</span>
+<span class="font-display text-display text-text-primary">$2,480.00 Due</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-mono">font-display • 30px / 42px • 700</span>
+</div>
+<!-- Headline Lg -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Headline-Lg / Operatory Patient Dossier</span>
+<span class="font-headline-lg text-headline-lg text-text-primary">Eleanor Vance, DDS (Emeritus)</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-mono">font-headline-lg • 24px / 34px • 600</span>
+</div>
+<!-- Headline Md -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Headline-Md / Procedure Stage</span>
+<span class="font-headline-md text-headline-md text-text-primary">Phase 2: Maxillary Arch Restoration</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-mono">font-headline-md • 20px / 30px • 600</span>
+</div>
+<!-- Headline Sm -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Headline-Sm / Diagnostic Finding</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Periapical Radiolucency #19 Distal Apex</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-mono">font-headline-sm • 18px / 26px • 600</span>
+</div>
+<!-- Body Md & Label -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Body-Md &amp; Label / SOAP Clinical Narrative</span>
+<p class="font-body-md text-body-md text-text-primary max-w-lg">
+                Patient tolerates articaine 4% w/ 1:100k epi. Apex locator confirmed 21.5mm working length with #20 K-file.
+              </p>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-mono">font-body-md • 14px / 22px • 400</span>
+</div>
+</div>
+<!-- Tabular figures & Dual Script preview -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- CDT Codes & Numeric Alignment -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">CDT Tabular Figures</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">pin</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-secondary">Monospaced numeric figures prevent vertical drift inside rapid ledger calculations.</p>
+<div class="flex flex-col gap-2 pt-2">
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-mono">CDT D3330</span>
+<span class="font-label-sm text-label-sm text-on-surface">Endodontic Molar</span>
+<span class="font-label-md text-label-md font-mono text-text-primary">$1,150.00</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-mono">CDT D2740</span>
+<span class="font-label-sm text-label-sm text-on-surface">Crown Porcelain</span>
+<span class="font-label-md text-label-md font-mono text-text-primary">$1,380.00</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-mono">CDT D0220</span>
+<span class="font-label-sm text-label-sm text-on-surface">Intraoral PA Single</span>
+<span class="font-label-md text-label-md font-mono text-text-primary">$45.00</span>
+</div>
+</div>
+</div>
+<!-- Dual Script Card (Alyamama / Arabic preview) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Bilingual Dental Localization</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">RTL Ready</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-secondary pb-2">Inter Latin coupled with Arabic clinical metadata.</p>
+<div class="p-3 rounded-xl bg-primary-tint/60 flex flex-col gap-1 text-right" dir="rtl">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">خطة علاج عصب السن المولي (#19)</span>
+<span class="font-body-md text-body-md text-secondary">تم تأكيد الإجراء بنجاح بواسطة الدكتور فانـس</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: SPATIAL CADENCE, RADII & TACTILE 3D ELEVATION -->
+<section class="flex flex-col gap-space-md" id="sec-elevation">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">03</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Spatial Cadence, Radii &amp; Tactile 3D Elevation</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Border-Free Tonal Planes</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Elevation Tier 1 -->
+<div class="bg-surface p-space-xl rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between h-64 relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Elevation Tier 1</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">Ambient Card Float</h3>
+<p class="font-body-md text-body-md text-text-secondary">
+              Baseline surface for vitals panels, procedure item lines, and medical history summaries.
+            </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between font-mono font-label-sm text-label-sm text-secondary">
+<span>shadow-[0_1px_3px_rgba(0,0,0,0.04)]</span>
+<span class="text-primary font-semibold">Z-Index: 0</span>
+</div>
+</div>
+<!-- Elevation Tier 2 -->
+<div class="bg-surface p-space-xl rounded-2xl shadow-[0_8px_24px_rgba(25,47,134,0.07)] flex flex-col justify-between h-64 relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Elevation Tier 2</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">Persistent Floating Rail</h3>
+<p class="font-body-md text-body-md text-text-secondary">
+              Pinned X-ray measurement toolbars, multi-tooth selection floats, and chairside quick-actions.
+            </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between font-mono font-label-sm text-label-sm text-secondary">
+<span>shadow-[0_8px_24px_rgba(25,47,134,0.07)]</span>
+<span class="text-primary font-semibold">Z-Index: 20</span>
+</div>
+</div>
+<!-- Elevation Tier 3 -->
+<div class="bg-surface p-space-xl rounded-2xl shadow-[0_20px_40px_rgba(25,47,134,0.12)] flex flex-col justify-between h-64 relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-danger font-bold uppercase tracking-wider">Elevation Tier 3</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">High-Tension Loupe Modal</h3>
+<p class="font-body-md text-body-md text-text-secondary">
+              Active DICOM CBCT slice inspector, anesthesia sign-off modals, and emergency overrides.
+            </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between font-mono font-label-sm text-label-sm text-secondary">
+<span>shadow-[0_20px_40px_rgba(25,47,134,0.12)]</span>
+<span class="text-danger font-semibold">Z-Index: 50</span>
+</div>
+</div>
+</div>
+<!-- Radii Spectrum Display -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<span class="font-label-md text-label-md text-text-secondary uppercase">Corner Roundness Architecture</span>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm text-center">
+<div class="p-4 rounded-[10px] bg-surface-container-low flex flex-col items-center justify-center gap-1 shadow-sm">
+<span class="font-label-md text-label-md text-text-primary font-mono">rounded-[10px]</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Buttons &amp; Inputs</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 shadow-sm">
+<span class="font-label-md text-label-md text-text-primary font-mono">rounded-xl (12px)</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Chips &amp; Badges</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col items-center justify-center gap-1 shadow-sm">
+<span class="font-label-md text-label-md text-text-primary font-mono">rounded-2xl (16px)</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Sub-modules</span>
+</div>
+<div class="p-4 rounded-3xl bg-surface-container-low flex flex-col items-center justify-center gap-1 shadow-sm">
+<span class="font-label-md text-label-md text-text-primary font-mono">rounded-3xl (24px)</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Master Cards</span>
+</div>
+<div class="p-4 rounded-full bg-surface-container-low flex flex-col items-center justify-center gap-1 shadow-sm col-span-2 sm:col-span-1">
+<span class="font-label-md text-label-md text-text-primary font-mono">rounded-full</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Action Pills</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: COMPONENT SYSTEM 01 - BUTTONS, PILLS & TABS -->
+<section class="flex flex-col gap-space-md" id="sec-components">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">04</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Clinical Interaction Archetypes</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Ergonomic Chairside Controls</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Button Palette -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Chairside Action Buttons</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Tactile Micro-States</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Primary Action -->
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-hover active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+              Add Procedure Code
+            </button>
+<!-- Secondary Outline Style -->
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+              Print Treatment Proposal
+            </button>
+<!-- Destructive/Abort -->
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-danger-tint text-danger font-label-md text-label-md hover:bg-error-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+              Cancel Case
+            </button>
+<!-- Signed Positive -->
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-success-tint text-tertiary font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+              e-Signed &amp; Locked
+            </button>
+</div>
+<!-- Stepper Control -->
+<div class="pt-2 flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-text-primary">Procedure Interval</span>
+<div class="inline-flex items-center gap-2 bg-surface rounded-full p-1 shadow-sm">
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container text-secondary transition-colors font-bold text-lg" type="button">-</button>
+<span class="font-label-md text-label-md text-primary font-mono px-3">45 min</span>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container text-secondary transition-colors font-bold text-lg" type="button">+</button>
+</div>
+</div>
+<!-- Operatory Quick Actions -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 p-3 rounded-xl bg-surface-container-low hover:bg-primary-tint hover:text-primary transition-all flex flex-col items-center gap-1 group" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">call</span>
+<span class="font-label-sm text-label-sm font-medium">Page Assistant</span>
+</button>
+<button class="flex-1 p-3 rounded-xl bg-surface-container-low hover:bg-primary-tint hover:text-primary transition-all flex flex-col items-center gap-1 group" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">medical_information</span>
+<span class="font-label-sm text-label-sm font-medium">New Script</span>
+</button>
+<button class="flex-1 p-3 rounded-xl bg-surface-container-low hover:bg-primary-tint hover:text-primary transition-all flex flex-col items-center gap-1 group" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">radiology</span>
+<span class="font-label-sm text-label-sm font-medium">Capture Bitewing</span>
+</button>
+</div>
+</div>
+<!-- Sub-Navigation Tab Strip -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Clinical Pill Navigation Tabs</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Screen 2/4/6/8 Sync</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+            Master capsule sub-navigation bar utilized at the top of every operatory view to shift clinical modes instantaneously.
+          </p>
+<div class="p-1.5 rounded-2xl bg-surface-container-low flex flex-wrap items-center gap-1 shadow-inner">
+<button class="px-3.5 py-1.5 rounded-full text-secondary hover:text-on-surface transition-colors font-label-md text-label-md" type="button">General Record</button>
+<button class="px-3.5 py-1.5 rounded-full text-secondary hover:text-on-surface transition-colors font-label-md text-label-md" type="button">Odontogram</button>
+<button class="px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm" type="button">Imaging &amp; X-Ray</button>
+<button class="px-3.5 py-1.5 rounded-full text-secondary hover:text-on-surface transition-colors font-label-md text-label-md" type="button">Treatment Plans</button>
+<button class="px-3.5 py-1.5 rounded-full text-secondary hover:text-on-surface transition-colors font-label-md text-label-md" type="button">Chairside Ledger</button>
+</div>
+<div class="p-3 rounded-xl bg-secondary-container/40 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<span class="font-body-md text-body-md text-primary">Active tab triggers zero-latency state caching for high-density DICOM renders.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: CLINICAL BADGES & CRITICAL ALERTS -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">05</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Clinical Badges &amp; High-Alert Taxonomy</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Fail-safe Visual Hierarchy</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Critical Medical Alert Banner Card -->
+<div class="bg-danger-tint p-space-md rounded-2xl shadow-[0_1px_3px_rgba(180,35,24,0.12)] flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-danger font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+<span>CRITICAL CONTRAINDICATION</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-danger font-bold">Penicillin / Amoxicillin</span>
+<p class="font-label-sm text-label-sm text-danger/80">Severe anaphylaxis reported 2021. Substitute Clindamycin 300mg.</p>
+</div>
+<!-- AI Pathology Finding Chip Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              AI Pathology Flag
+            </span>
+<span class="font-label-sm text-label-sm font-mono text-tertiary font-bold">94.8% Conf.</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Tooth #15 Interproximal Caries</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Bitewing R-2024-03 • Enamel Breach</span>
+</div>
+</div>
+<!-- Insurance Status Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-success-tint text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              Active Coverage
+            </span>
+<span class="font-label-sm text-label-sm font-mono text-secondary">Grp: #8841-B</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Delta Dental Premier PPO</span>
+<span class="font-label-sm text-label-sm text-text-secondary">$1,850.00 Remaining Annual Max</span>
+</div>
+</div>
+<!-- Lab Case Status -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-warning-tint text-warning font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+              Lab Case Received
+            </span>
+<span class="font-label-sm text-label-sm font-mono text-text-secondary">Box #04</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Glidewell BruxZir Crown</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Tooth #19 • Shade A2 • Arrived 08:30</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 06: PRODUCTION MODULE ARCHETYPES -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">06</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Production Module Archetypes (from 4 Operatory Screens)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">High-Density Chairside Blueprints</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Module A: Mini Treatment Procedure Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col gap-space-md justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-primary-tint text-primary flex items-center justify-center font-bold font-mono text-label-sm">#11</span>
+<div>
+<h4 class="font-label-md text-label-md text-text-primary">Maxillary Canine Endodontics</h4>
+<span class="font-label-sm text-label-sm font-mono text-text-secondary">CDT D3330 • Single Canal</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-success-tint text-tertiary font-label-sm text-label-sm font-semibold">Completed</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary">Procedure Fee</span>
+<span class="font-label-md text-label-md font-mono text-text-primary">$850.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary">Insurance Estimate (80%)</span>
+<span class="font-label-md text-label-md font-mono text-tertiary">-$680.00</span>
+</div>
+<div class="pt-2 border-t border-surface-container flex justify-between items-center font-bold">
+<span class="font-label-sm text-label-sm text-text-primary">Patient Co-Pay</span>
+<span class="font-headline-sm text-headline-sm font-mono text-primary">$170.00</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-text-secondary">Dr. Evelyn Vance • Op Suite A-1</span>
+<button class="text-primary hover:text-primary-hover font-label-sm text-label-sm font-bold flex items-center gap-1" type="button">
+              View Chart Notes
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Module B: Mini Financial Split Gauge (SVG Donut Chart) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h4 class="font-label-md text-label-md text-text-primary">Chairside Financial Split</h4>
+<span class="font-label-sm text-label-sm text-text-secondary">Total Case: $2,080.00</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">donut_large</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<!-- Inline SVG Gauge (Under 2KB) -->
+<div class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#f3f3f3" stroke-width="12"></circle>
+<!-- 70% Insurance (Cobalt #192F86) -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#192F86" stroke-dasharray="251.2" stroke-dashoffset="75.36" stroke-linecap="round" stroke-width="12"></circle>
+<!-- 30% Patient (Amber #FACC15 / Warning-CTA) -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#FACC15" stroke-dasharray="251.2" stroke-dashoffset="175.84" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-label-md text-label-md font-mono font-bold text-text-primary">70/30</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Coverage</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary">Insurance Pay (70%)</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-mono text-text-primary pl-4.5">$1,450.00</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-warning-cta"></span>
+<span class="font-label-sm text-label-sm text-secondary">Patient Share (30%)</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-mono text-text-primary pl-4.5">$630.00</span>
+</div>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Pre-Auth Reference</span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">PA-99201-OK</span>
+</div>
+</div>
+<!-- Module C: Mini X-Ray Diagnostic Toolbar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="font-label-md text-label-md text-text-primary">DICOM Viewer Floating Tools</h4>
+<span class="font-label-sm text-label-sm text-text-secondary">Direct Pixel Manipulation</span>
+</div>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-primary-tint text-primary font-label-sm text-label-sm font-mono">16-bit CBCT</span>
+</div>
+<!-- Micro Image Inspection Mock with Placeholder & Data-Alt -->
+<div class="relative w-full h-24 rounded-xl overflow-hidden bg-on-surface flex items-center justify-center shadow-inner">
+<img class="w-full h-full object-cover opacity-60" data-alt="High precision dental bitewing radiograph showing sharp tooth roots, coronal restorations, and fine jaw bone trabeculae in sterile clinical monochrome blue-gray tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6xzV17qx9L_Y2dJLWIZv4QrMg--IxtK0_Ft4f4ji3A1nzzBL5CiNtbfq3QH9b7miVBgLVKeahNwLkCECBbYDnoZel-GAoYyYdqMQApVXNfIUm-SlqzrT0WpA22rnzJDF-xXEDtJRcAaOv4IltKRHShKAiodJz5dKVmpHo7sFBsvC2HBWa5hrn5e35eq3Ws471c5I7twWYIQbZqLMRoIgKQXdaewu_kDOUbYgh7lRFsMALLlIMtE2Zlw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm font-mono">
+<span>FOV: 8x8 cm</span>
+<span class="text-tertiary-fixed">Apex Sharp</span>
+</div>
+</div>
+<!-- Diagnostic Toolbar Mock -->
+<div class="p-1.5 rounded-2xl bg-surface-container-low flex items-center justify-between gap-1 shadow-sm">
+<button class="p-2 rounded-xl bg-surface-container-lowest text-primary shadow-sm hover:scale-105 transition-transform flex items-center justify-center" title="Pan" type="button">
+<span class="material-symbols-outlined text-[18px]">drag_pan</span>
+</button>
+<button class="p-2 rounded-xl text-secondary hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" title="Contrast Slider" type="button">
+<span class="material-symbols-outlined text-[18px]">contrast</span>
+</button>
+<button class="p-2 rounded-xl text-secondary hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" title="Digital Caliper" type="button">
+<span class="material-symbols-outlined text-[18px]">square_foot</span>
+</button>
+<button class="p-2 rounded-xl text-secondary hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" title="Invert Grayscale" type="button">
+<span class="material-symbols-outlined text-[18px]">invert_colors</span>
+</button>
+<button class="p-2 rounded-xl bg-primary-container text-on-primary shadow-sm hover:scale-105 transition-transform flex items-center justify-center" title="Pathology Pin" type="button">
+<span class="material-symbols-outlined text-[18px]">location_searching</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 07: ODONTOGRAM 32-TOOTH MATRIX PREVIEW -->
+<section class="bg-surface-container-lowest p-space-2xl rounded-2xl shadow-[0_4px_24px_rgba(25,47,134,0.06)] flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Odontogram Token Implementation</span>
+<h3 class="font-headline-lg text-headline-lg text-text-primary">Universal Numbering System (Tooth #1 - #16 Maxillary Arch)</h3>
+</div>
+<div class="flex items-center gap-space-sm text-label-sm font-mono text-secondary">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> Crown</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Endo</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Composite</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Sound</span>
+</div>
+</div>
+<!-- 16-Tooth Interactive Preview Row -->
+<div class="grid grid-cols-8 sm:grid-cols-16 gap-1.5 p-space-sm bg-surface-container-low rounded-2xl shadow-inner">
+<!-- Tooth #1 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#1</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #2 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#2</span>
+<span class="material-symbols-outlined text-[20px] text-purple-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+</div>
+<!-- Tooth #3 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#3</span>
+<span class="material-symbols-outlined text-[20px] text-amber-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+</div>
+<!-- Tooth #4 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#4</span>
+<span class="material-symbols-outlined text-[20px] text-blue-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+</div>
+<!-- Tooth #5 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#5</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #6 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#6</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #7 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#7</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #8 -->
+<div class="p-2 rounded-xl bg-primary-tint flex flex-col items-center gap-1 shadow-sm ring-2 ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] font-bold text-primary">#8</span>
+<span class="material-symbols-outlined text-[20px] text-primary">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<!-- Tooth #9 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#9</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #10 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#10</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #11 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#11</span>
+<span class="material-symbols-outlined text-[20px] text-amber-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+</div>
+<!-- Tooth #12 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#12</span>
+<span class="material-symbols-outlined text-[20px] text-blue-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+</div>
+<!-- Tooth #13 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#13</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Tooth #14 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#14</span>
+<span class="material-symbols-outlined text-[20px] text-purple-600">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+</div>
+<!-- Tooth #15 -->
+<div class="p-2 rounded-xl bg-danger-tint flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-danger cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-danger font-bold">#15</span>
+<span class="material-symbols-outlined text-[20px] text-danger">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-danger animate-ping"></span>
+</div>
+<!-- Tooth #16 -->
+<div class="p-2 rounded-xl bg-surface flex flex-col items-center gap-1 shadow-sm hover:ring-2 hover:ring-primary-container cursor-pointer transition-all">
+<span class="font-mono text-[10px] text-secondary">#16</span>
+<span class="material-symbols-outlined text-[20px] text-outline">dentistry</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm text-text-secondary">
+<span>← Quadrant 1 (Right Maxillary)</span>
+<span class="font-mono">Midline (#8 | #9)</span>
+<span>Quadrant 2 (Left Maxillary) →</span>
+</div>
+</section>
+<!-- Footer System Status & Export Bar -->
+<footer class="p-space-lg bg-surface-container-low rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-text-primary">Operatory Pro System Status: 100% In Sync</span>
+<span class="font-label-sm text-label-sm text-text-secondary">• Build v4.2.0-clinical</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-4 py-2 rounded-full bg-surface text-secondary hover:text-on-surface font-label-sm text-label-sm shadow-sm transition-all" onclick="alert('JSON Design Tokens copied to clinical clipboard!')" type="button">
+          Copy Tokens JSON
+        </button>
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm hover:bg-primary-hover transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" type="button">
+          Back to Top ↑
+        </button>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  function highlightSection(sectionId) {
+    if (sectionId === 'all') {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('opacity-40'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const target = document.getElementById('sec-' + sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      target.classList.add('transition-all', 'duration-300', 'scale-[1.01]');
+      setTimeout(() => {
+        target.classList.remove('scale-[1.01]');
+      }, 500);
+    }
+  }
+</script></main></div></body></html>

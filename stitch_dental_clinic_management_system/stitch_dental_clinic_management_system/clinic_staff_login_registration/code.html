@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#001868", "on-secondary-container": "#4f647d", "primary-tint": "#EEF1FA", "outline-variant": "#c5c5d3", warning: "#854D0E", "on-secondary-fixed": "#041d32", "border-field": "#DEDEDE", surface: "#faf9f9", "on-surface": "#1a1c1c", "surface-dim": "#dadada", "on-tertiary": "#ffffff", "on-primary-container": "#899cf8", "surface-variant": "#e3e2e2", "primary-hover": "#14266D", "inverse-surface": "#2f3131", "surface-container": "#eeeeee", "text-secondary": "#666666", "on-surface-variant": "#454652", "primary-fixed-dim": "#b9c3ff", outline: "#757683", "tertiary-fixed-dim": "#8cd6ad", "on-primary": "#ffffff", "on-background": "#1a1c1c", "text-primary": "#111111", "on-tertiary-container": "#67b089", error: "#ba1a1a", "primary-fixed": "#dde1ff", "success-tint": "#ECFDF3", "border-card": "#E5E5E5", "tertiary-container": "#004128", "error-container": "#ffdad6", "secondary-container": "#cce2ff", "tertiary-fixed": "#a8f3c8", "warning-tint": "#FFFAEB", "on-error": "#ffffff", danger: "#B42318", "inverse-on-surface": "#f1f1f0", background: "#faf9f9", "surface-container-lowest": "#ffffff", "warning-cta": "#FACC15", "surface-container-highest": "#e3e2e2", "on-error-container": "#93000a", "surface-container-low": "#f4f3f3", "border-divider": "#EDEDED", "surface-container-high": "#e8e8e8", tertiary: "#002918", secondary: "#4b6079", "on-tertiary-fixed-variant": "#005234", "secondary-fixed-dim": "#b3c8e5", "on-primary-fixed": "#001257", "danger-tint": "#FEF3F2", "on-tertiary-fixed": "#002112", "on-primary-fixed-variant": "#2b3f95", "on-secondary-fixed-variant": "#334860", "on-secondary": "#ffffff", "inverse-primary": "#b9c3ff", "surface-bright": "#faf9f9", "secondary-fixed": "#d1e4ff", "surface-tint": "#4458af", "primary-container": "#192f86"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-xs": "0.5rem", margin: "1rem", "gutter-desktop": "1.5rem", "space-xl": "1.5rem", "margin-desktop": "1.75rem", gutter: "1rem", "space-md": "1rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "space-lg": "1.25rem", "space-2xl": "1.75rem", "space-3xl": "2rem"}, fontFamily: {"body-lg-medium": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "display-mobile": ["Inter"], display: ["Inter"], "body-md-medium": ["Inter"], "headline-lg": ["Inter"], headline: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"body-lg-medium": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "500"}], "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "400"}], "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "0", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "400"}], "label-sm": ["13px", {lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500"}], "headline-md": ["20px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "display-mobile": ["26px", {lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700"}], display: ["30px", {lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md-medium": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "500"}], "headline-lg": ["24px", {lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased flex items-center justify-center min-h-screen"><main class="w-full flex items-center justify-center p-space-md"><div class="flex flex-col w-full items-center justify-center py-space-xl px-space-md">
+<!-- Brand Ambient Highlight Behind Card -->
+<div class="relative w-full max-w-[480px]">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary-tint/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<!-- Main Authentication Portal Card -->
+<div class="w-full bg-surface rounded-2xl shadow-xl p-space-xl sm:p-space-2xl transition-all duration-200">
+<!-- Top Utility Header: Language Switcher & Security Badge -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="relative inline-flex items-center bg-surface-container-low px-space-xs py-1 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-1">language</span>
+<select aria-label="Select interface language" class="bg-transparent font-label-sm text-label-sm text-on-surface cursor-pointer focus:outline-none pr-1" id="lang-select">
+<option value="en">English (US)</option>
+<option value="ar">العربية</option>
+<option value="fr">Français</option>
+</select>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-success-tint text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">HIPAA Certified</span>
+</div>
+</div>
+<!-- Clinic Header & Brand Identity -->
+<div class="flex flex-col items-center text-center mb-space-xl">
+<div class="relative mb-space-sm p-2 rounded-xl bg-primary-tint/50 flex items-center justify-center">
+<!-- Dental Clinic Graphic Emblem -->
+<svg class="w-14 h-14 text-primary" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M28 28C28 20 34 16 42 18C47 19.3 48.5 24 50 24C51.5 24 53 19.3 58 18C66 16 72 20 72 28C72 38 68 52 64 68C61.5 78 57 84 53 84C49 84 48 76 45 76C42 76 41 84 37 84C33 84 28.5 78 26 68C22 52 18 38 18 28C18 20 20 20 28 28Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+<path d="M43 36H57V48H69V60H57V72H43V60H31V48H43V36Z" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-linejoin="round" stroke-width="4.5"></path>
+<path d="M12 50C22 42 34 54 50 50C66 46 78 58 88 50" stroke="currentColor" stroke-linecap="round" stroke-width="5"></path>
+</svg>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">DentalCare Clinic</h1>
+<p class="font-body-md text-body-md text-text-secondary mt-1">Surgical Precision Practice Management System</p>
+</div>
+<!-- Segmented View Toggle Switch -->
+<div class="grid grid-cols-2 p-1 bg-surface-container-low rounded-xl mb-space-lg">
+<button class="py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 bg-surface text-primary shadow-sm" id="tab-signin" onclick="switchMode('signin')" type="button">
+          Staff Sign In
+        </button>
+<button class="py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 text-text-secondary hover:text-text-primary" id="tab-register" onclick="switchMode('register')" type="button">
+          Register Clinic
+        </button>
+</div>
+<!-- Form Container -->
+<form class="space-y-space-md" id="auth-form" onsubmit="event.preventDefault();">
+<!-- Practice Role Selector Chips -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm text-text-secondary">Clinical Role</label>
+<div class="grid grid-cols-3 gap-2" id="role-selector">
+<button class="role-btn h-11 flex items-center justify-center px-2 rounded-lg bg-primary-tint text-primary font-label-sm text-label-sm font-semibold transition-colors duration-150" onclick="selectRole(this, 'dentist')" type="button">
+<span class="material-symbols-outlined text-[18px] mr-1">dentistry</span>
+              Dentist
+            </button>
+<button class="role-btn h-11 flex items-center justify-center px-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors duration-150 hover:bg-surface-variant" onclick="selectRole(this, 'reception')" type="button">
+<span class="material-symbols-outlined text-[18px] mr-1">desk</span>
+              Reception
+            </button>
+<button class="role-btn h-11 flex items-center justify-center px-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors duration-150 hover:bg-surface-variant" onclick="selectRole(this, 'admin')" type="button">
+<span class="material-symbols-outlined text-[18px] mr-1">admin_panel_settings</span>
+              Admin
+            </button>
+</div>
+</div>
+<!-- Clinic Practice License ID (Dynamic Registration Field) -->
+<div class="hidden space-y-1.5" id="clinic-id-field">
+<label class="block font-label-sm text-label-sm text-text-secondary" for="clinic-key-input">Clinic License or Facility ID</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px] pointer-events-none">local_hospital</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-lowest text-text-primary font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-primary-tint/20 transition-all duration-150" id="clinic-key-input" placeholder="DEN-8849-NY" type="text"/>
+</div>
+</div>
+<!-- Username / Phone Contact Field -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm text-text-secondary" for="identifier-input" id="identifier-label">Staff ID / Registered Mobile</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center gap-1 text-secondary pointer-events-none">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-lowest text-text-primary font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-primary-tint/20 transition-all duration-150" id="identifier-input" placeholder="e.g. DENT-4029 or +1 (555) 019-2834" required="" type="text"/>
+</div>
+</div>
+<!-- Security Password Field -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-text-secondary" for="password-input">Security Password</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-hover transition-colors" href="#forgot" id="forgot-link">Forgot key?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px] pointer-events-none">lock</span>
+<input class="w-full h-11 pl-10 pr-11 rounded-lg bg-surface-container-lowest text-text-primary font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-primary-tint/20 transition-all duration-150" id="password-input" placeholder="••••••••••••" required="" type="password"/>
+<button aria-label="Toggle password view" class="absolute right-3 p-1 rounded-md text-secondary hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Verification / Trusted Hardware Checkbox -->
+<div class="pt-1 flex items-start gap-2.5">
+<div class="flex items-center h-5">
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface focus:ring-0 cursor-pointer accent-primary" id="remember-device" type="checkbox"/>
+</div>
+<label class="font-body-md text-body-md text-on-surface-variant select-none cursor-pointer" for="remember-device">
+            Trust this surgical operatory terminal for 12 hours
+          </label>
+</div>
+<!-- Main Action Trigger Button -->
+<div class="pt-space-xs">
+<button class="w-full h-11 flex items-center justify-center gap-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary-hover active:scale-[0.99] transition-all duration-150 shadow-md" id="submit-cta" type="submit">
+<span class="material-symbols-outlined text-[20px]">login</span>
+<span id="cta-label">Sign In to Clinic Workspace</span>
+</button>
+</div>
+</form>
+<!-- Practice Support & Help Auxiliary -->
+<div class="mt-space-xl pt-space-md border-t border-border-divider/50 flex flex-col items-center gap-2 text-center">
+<p class="font-body-md text-body-md text-text-secondary">
+          Need clinical onboarding assistance?
+        </p>
+<button class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-primary-hover transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+          Contact Practice Tech Support
+        </button>
+</div>
+</div>
+<!-- Operatory Footer Metadata -->
+<div class="flex items-center justify-between px-space-md mt-space-md text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-text-secondary">Operatory Cloud Gateway v4.8</span>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-text-secondary">
+<a class="hover:text-on-surface" href="#privacy">Data Privacy</a>
+<span>•</span>
+<a class="hover:text-on-surface" href="#compliance">Audit Logs</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentMode = 'signin';
+
+  function switchMode(mode) {
+    currentMode = mode;
+    const tabSignin = document.getElementById('tab-signin');
+    const tabRegister = document.getElementById('tab-register');
+    const clinicIdField = document.getElementById('clinic-id-field');
+    const ctaLabel = document.getElementById('cta-label');
+    const idLabel = document.getElementById('identifier-label');
+    const idInput = document.getElementById('identifier-input');
+
+    if (mode === 'signin') {
+      tabSignin.className = 'py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 bg-surface text-primary shadow-sm';
+      tabRegister.className = 'py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 text-text-secondary hover:text-text-primary';
+      clinicIdField.classList.add('hidden');
+      ctaLabel.textContent = 'Sign In to Clinic Workspace';
+      idLabel.textContent = 'Staff ID / Registered Mobile';
+      idInput.placeholder = 'e.g. DENT-4029 or +1 (555) 019-2834';
+    } else {
+      tabRegister.className = 'py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 bg-surface text-primary shadow-sm';
+      tabSignin.className = 'py-2.5 rounded-lg font-label-md text-label-md transition-all duration-150 text-text-secondary hover:text-text-primary';
+      clinicIdField.classList.remove('hidden');
+      ctaLabel.textContent = 'Register Clinic Account';
+      idLabel.textContent = 'Primary Practice Contact Email / Phone';
+      idInput.placeholder = 'dr.reynolds@metrodental.com';
+    }
+  }
+
+  function selectRole(button, role) {
+    const buttons = document.querySelectorAll('.role-btn');
+    buttons.forEach(btn => {
+      btn.className = 'role-btn h-11 flex items-center justify-center px-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors duration-150 hover:bg-surface-variant';
+    });
+    button.className = 'role-btn h-11 flex items-center justify-center px-2 rounded-lg bg-primary-tint text-primary font-label-sm text-label-sm font-semibold transition-colors duration-150';
+  }
+
+  function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password-input');
+    const eyeIcon = document.getElementById('eye-icon');
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      eyeIcon.textContent = 'visibility_off';
+    } else {
+      passwordInput.type = 'password';
+      eyeIcon.textContent = 'visibility';
+    }
+  }
+</script></main></body></html>

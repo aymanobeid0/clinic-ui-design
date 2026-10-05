@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#001868", "on-secondary-container": "#4f647d", "primary-tint": "#EEF1FA", "outline-variant": "#c5c5d3", warning: "#854D0E", "on-secondary-fixed": "#041d32", "border-field": "#DEDEDE", surface: "#faf9f9", "on-surface": "#1a1c1c", "surface-dim": "#dadada", "on-tertiary": "#ffffff", "on-primary-container": "#899cf8", "surface-variant": "#e3e2e2", "primary-hover": "#14266D", "inverse-surface": "#2f3131", "surface-container": "#eeeeee", "text-secondary": "#666666", "on-surface-variant": "#454652", "primary-fixed-dim": "#b9c3ff", outline: "#757683", "tertiary-fixed-dim": "#8cd6ad", "on-primary": "#ffffff", "on-background": "#1a1c1c", "text-primary": "#111111", "on-tertiary-container": "#67b089", error: "#ba1a1a", "primary-fixed": "#dde1ff", "success-tint": "#ECFDF3", "border-card": "#E5E5E5", "tertiary-container": "#004128", "error-container": "#ffdad6", "secondary-container": "#cce2ff", "tertiary-fixed": "#a8f3c8", "warning-tint": "#FFFAEB", "on-error": "#ffffff", danger: "#B42318", "inverse-on-surface": "#f1f1f0", background: "#faf9f9", "surface-container-lowest": "#ffffff", "warning-cta": "#FACC15", "surface-container-highest": "#e3e2e2", "on-error-container": "#93000a", "surface-container-low": "#f4f3f3", "border-divider": "#EDEDED", "surface-container-high": "#e8e8e8", tertiary: "#002918", secondary: "#4b6079", "on-tertiary-fixed-variant": "#005234", "secondary-fixed-dim": "#b3c8e5", "on-primary-fixed": "#001257", "danger-tint": "#FEF3F2", "on-tertiary-fixed": "#002112", "on-primary-fixed-variant": "#2b3f95", "on-secondary-fixed-variant": "#334860", "on-secondary": "#ffffff", "inverse-primary": "#b9c3ff", "surface-bright": "#faf9f9", "secondary-fixed": "#d1e4ff", "surface-tint": "#4458af", "primary-container": "#192f86"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-xs": "0.5rem", margin: "1rem", "gutter-desktop": "1.5rem", "space-xl": "1.5rem", "margin-desktop": "1.75rem", gutter: "1rem", "space-md": "1rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "space-lg": "1.25rem", "space-2xl": "1.75rem", "space-3xl": "2rem"}, fontFamily: {"body-lg-medium": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "display-mobile": ["Inter"], display: ["Inter"], "body-md-medium": ["Inter"], "headline-lg": ["Inter"], headline: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"body-lg-medium": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "500"}], "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "400"}], "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "0", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "400"}], "label-sm": ["13px", {lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500"}], "headline-md": ["20px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "display-mobile": ["26px", {lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700"}], display: ["30px", {lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md-medium": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "500"}], "headline-lg": ["24px", {lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Dental Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgi51ZM7NVuF4bRSEhGUrjP2vh_NCorcPTBAusgIjcCNJVlpcxstruWI09E3edkbmFYjiPfZdAKgkLHdtuVpTOsNhH4G-KJVuD5CTQY0hGLbC5S_6mPypzmiCBdQ3YRq_Yju68pxxpRt21X1L4v4Uqy8g5soyxPfwglvjXJF5rbOHyucpuFidjMDM-y_W7ylhD-MM9dvdInjcS_8aciOk1GK_r5PbQlNI6R9B4J46ejcNR-RMAYdwi1Q"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">DentalCare</span></div><button aria-label="Collapse sidebar" class="h-8 w-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">menu_open</span></button></div><div class="px-space-md py-space-xs"><div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-2xs min-w-0"><span class="material-symbols-outlined text-primary text-[18px]">domain</span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Downtown Branch</p><p class="font-label-sm text-label-sm text-text-secondary text-[11px] leading-tight">Chair 1-6 • Active</p></div></div><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></div></div><nav class="flex-1 px-space-xs py-space-xs flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-body-md-medium rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.06)]"><a class="flex items-center gap-space-xs px-space-sm h-11 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard-calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Dashboard / Calendar</span></a><a class="flex items-center gap-space-xs px-space-sm h-11 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>Patients</span></a><a class="flex items-center gap-space-xs px-space-sm h-11 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="prescriptions-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Prescriptions &amp; Invoices</span></a><a class="flex items-center justify-between px-space-sm h-11 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="booking-requests" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">mark_chat_unread</span><span>Booking Requests</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-[11px] font-semibold">4</span></a><a class="flex items-center gap-space-xs px-space-sm h-11 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="clinic-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Clinic Settings</span></a></nav></div><div class="p-space-xs bg-surface"><div class="rounded-lg bg-surface-container-low p-space-xs flex flex-col gap-space-2xs"><div class="flex items-center justify-between px-space-2xs py-1"><div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-outline text-[18px]">contact_phone</span><span class="font-label-sm text-label-sm text-text-secondary">Emergency Line</span></div><span class="font-label-sm text-label-sm text-primary font-semibold">#2401</span></div><a class="flex items-center gap-space-xs px-space-sm h-10 rounded-lg text-danger hover:bg-danger-tint hover:text-danger transition-colors font-body-md-medium text-body-md-medium" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Logout</span></a></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between gap-space-md"><div class="flex-1 max-w-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-11 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Quick search patients, appointments, phone..." type="search"/></div></div><div class="flex items-center gap-space-md"><button class="h-11 px-space-md rounded-lg bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-[0_1px_3px_rgba(0,0,0,0.06)]"><span class="material-symbols-outlined text-[20px]">add</span><span>New Appointment</span></button><button aria-label="Notifications" class="relative h-11 w-11 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full ring-2 ring-surface"></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLGfxiFS3Qe6WWwAm0k9JaW058CPpIufUJBL4eZejwPCER8MhXfswJZCPNKkClkd-j3J9ig2_qtVLHCZu5ImWTMLnVsPonyuDEkx7hXIAdjEyrGaUHnbLNGMABiqXfCe6_WO38MSgphUlmjJxfC2SU7PUyVJj-mpyZMykMnQ2N_9log-srZmF7rDgxgDGYF0k8wgdBu6d8hbLeYuSi0qCxZ-rcZ1c9INRPiGagbuZB34nVhgtakqcDDw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed ring-2 ring-surface"></span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. Sarah Jenkins</span><span class="font-label-sm text-label-sm text-text-secondary text-[12px] leading-tight">Lead Dentist</span></div></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg lg:p-space-xl flex flex-col gap-space-lg max-w-[1440px] mx-auto w-full">
+<!-- Top Action / Filtering Hub -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md bg-surface p-space-md rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-2xs bg-primary-tint text-primary px-space-sm py-2 rounded-lg font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Monday, Oct 05, 2026</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-success-tint text-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span> Clinic Live
+        </span>
+</div>
+<!-- Practitioner & Operatory Toggles -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg gap-1">
+<button class="doctor-filter px-3 py-1.5 rounded-lg text-on-primary bg-primary-container font-label-sm text-label-sm shadow-sm transition-all" data-filter="all">All Dentists</button>
+<button class="doctor-filter px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" data-filter="sarah">Dr. Sarah Jenkins</button>
+<button class="doctor-filter px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" data-filter="marc">Dr. Marc Alami</button>
+</div>
+<div class="relative inline-flex items-center">
+<select class="h-10 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none cursor-pointer">
+<option>All Operatories</option>
+<option>Operatory 1 (Surgical)</option>
+<option>Operatory 2 (Restorative)</option>
+<option>Hygiene Suite</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 text-outline text-[18px]">expand_more</span>
+</div>
+<button class="h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-label-md flex items-center gap-space-2xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Quick Appointment</span>
+</button>
+</div>
+</div>
+<!-- 4 Top KPI Stat Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-semibold">Today's Appointments</span>
+<div class="w-9 h-9 rounded-lg bg-primary-tint text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary leading-none">18</span>
+<span class="font-label-sm text-label-sm text-text-secondary">scheduled</span>
+</div>
+<div class="flex items-center gap-2 mt-space-xs font-label-sm text-[12px] text-text-secondary">
+<span class="inline-flex items-center gap-1 text-tertiary font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>4 done</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 text-warning font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>2 in-chair</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-semibold">WhatsApp Requests</span>
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary leading-none">5</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[11px] font-semibold">Awaiting review</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary mt-space-xs text-[13px]">Avg. response time: 4m</p>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-semibold">Today's Clinic Revenue</span>
+<div class="w-9 h-9 rounded-lg bg-success-tint text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-text-primary leading-none">$3,420</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold">+14% vs avg</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary mt-space-xs text-[13px]">8 invoices processed • 3 unbilled</p>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-semibold">Chair Utilization</span>
+<div class="w-9 h-9 rounded-lg bg-warning-tint text-warning flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-primary leading-none">87%</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Operatories 1-3 active</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 87%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace Layout: Calendar Grid + Detailed Context Side Panel -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Interactive Hourly Time-Grid Calendar (8 Columns on desktop) -->
+<div class="xl:col-span-8 bg-surface rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Calendar Header Bar with Operatory Column Identifiers -->
+<div class="p-space-md bg-surface flex items-center justify-between shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-text-primary">Daily Operatory Schedule</span>
+<span class="text-label-sm font-label-sm text-text-secondary bg-surface-container-low px-2 py-0.5 rounded">GMT-4 Live</span>
+</div>
+<div class="flex items-center gap-space-2xs text-text-secondary">
+<button class="p-1.5 hover:bg-surface-container rounded-lg transition-colors" title="Previous Day">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm bg-surface-container-low hover:bg-surface-container rounded-lg font-semibold text-on-surface">Today</button>
+<button class="p-1.5 hover:bg-surface-container rounded-lg transition-colors" title="Next Day">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Schedule Matrix Header -->
+<div class="grid grid-cols-12 bg-surface-container-low py-space-xs text-text-secondary font-label-sm text-label-sm px-2">
+<div class="col-span-2 text-center font-semibold">Time</div>
+<div class="col-span-5 px-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-semibold text-on-surface">Operatory 1</span>
+<span class="text-[12px] text-text-secondary">Dr. Sarah Jenkins</span>
+</div>
+<span class="text-[11px] bg-surface px-1.5 py-0.5 rounded font-mono">Ch-1</span>
+</div>
+<div class="col-span-5 px-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-semibold text-on-surface">Operatory 2</span>
+<span class="text-[12px] text-text-secondary">Dr. Marc Alami</span>
+</div>
+<span class="text-[11px] bg-surface px-1.5 py-0.5 rounded font-mono">Ch-2</span>
+</div>
+</div>
+<!-- Scrollable Hourly Canvas -->
+<div class="relative overflow-y-auto max-h-[640px] bg-surface">
+<!-- Time Grid Background Rows (30min increments) -->
+<div class="relative min-w-[560px]">
+<!-- Red Live Time Marker -->
+<div class="absolute left-0 right-0 top-[195px] z-20 flex items-center pointer-events-none">
+<div class="w-14 text-right pr-2 font-mono text-[11px] font-bold text-danger">10:45 AM</div>
+<div class="w-2 h-2 rounded-full bg-danger -ml-1"></div>
+<div class="flex-1 h-[2px] bg-danger"></div>
+</div>
+<!-- 08:30 AM -->
+<div class="grid grid-cols-12 h-16 bg-surface-container-lowest">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">08:30</div>
+<div class="col-span-5 relative bg-surface-container-low/20"></div>
+<div class="col-span-5 relative bg-surface-container-low/20"></div>
+</div>
+<!-- 09:00 AM -->
+<div class="grid grid-cols-12 h-20 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">09:00</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10">
+<!-- Appointment: Robert Chen (09:00 - 09:45) -->
+<div class="appt-card absolute inset-x-1 top-1 h-[68px] rounded-lg bg-primary-container text-on-primary p-2 flex flex-col justify-between shadow-sm cursor-pointer hover:brightness-110 transition-all z-10" data-age="42" data-alert="High Alert: Severe Penicillin Allergy (Anaphylaxis risk)" data-avatar="placeholder" data-cost="$680" data-dentist="Dr. Sarah Jenkins" data-gender="Male" data-id="PT-88902" data-name="Robert Chen" data-operatory="Operatory 1" data-status="Completed" data-time="09:00 AM - 09:45 AM" data-type="Crown Prep &amp; Impression">
+<div class="flex items-start justify-between leading-tight">
+<span class="font-label-md text-label-md truncate">Robert Chen</span>
+<span class="text-[10px] bg-danger text-on-error px-1.5 py-0.5 rounded font-bold uppercase">Allergy</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-primary-fixed-dim">
+<span class="truncate">Crown Prep • FDI #14</span>
+<span class="font-mono">45m</span>
+</div>
+</div>
+</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10">
+<!-- Appointment: Emily Watson (09:30 - 10:00) -->
+<div class="appt-card absolute inset-x-1 top-8 h-[44px] rounded-lg bg-tertiary text-on-tertiary p-2 flex flex-col justify-between shadow-sm cursor-pointer hover:brightness-110 transition-all z-10" data-age="29" data-alert="Mild dentin hypersensitivity, lower anterior." data-avatar="placeholder" data-cost="$185" data-dentist="Dr. Marc Alami" data-gender="Female" data-id="PT-91204" data-name="Emily Watson" data-operatory="Hygiene Suite" data-status="Completed" data-time="09:30 AM - 10:00 AM" data-type="Routine Scaling &amp; Polish">
+<div class="flex items-center justify-between leading-tight">
+<span class="font-label-sm text-label-sm truncate font-semibold">Emily Watson</span>
+<span class="text-[10px] bg-white/20 text-on-tertiary px-1 py-0.2 rounded font-mono">WA Confirmed</span>
+</div>
+<div class="text-[11px] text-tertiary-fixed-dim truncate">Routine Scaling &amp; Polish</div>
+</div>
+</div>
+</div>
+<!-- 10:00 AM -->
+<div class="grid grid-cols-12 h-24 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">10:00</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10">
+<!-- Appointment: David Miller (10:15 - 11:15) active selected -->
+<div class="appt-card absolute inset-x-1 top-4 h-[84px] rounded-lg bg-primary text-on-primary p-2.5 flex flex-col justify-between shadow-md cursor-pointer ring-2 ring-warning-cta z-10" data-age="54" data-alert="Hypertensive (Pre-op BP 138/88). Use Epinephrine 1:200,000 only." data-avatar="placeholder" data-cost="$920" data-dentist="Dr. Sarah Jenkins" data-gender="Male" data-id="PT-77631" data-name="David Miller" data-operatory="Operatory 1" data-status="In Chair" data-time="10:15 AM - 11:15 AM" data-type="Root Canal Treatment (FDI #26)">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-warning-cta animate-ping"></span>
+<span class="font-label-md text-label-md text-white font-bold truncate">David Miller</span>
+</div>
+<span class="text-[12px] text-primary-fixed">Root Canal Treatment (FDI #26)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-warning-tint text-warning font-label-sm text-[11px] font-bold">In Chair</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-outline-variant pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">timer</span> 10:15 - 11:15</span>
+<span class="text-white font-mono bg-white/10 px-1.5 rounded">60 min</span>
+</div>
+</div>
+</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+<!-- 11:00 AM -->
+<div class="grid grid-cols-12 h-20 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">11:00</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10">
+<!-- Appointment: Sophia Martinez (11:30 - 12:00) -->
+<div class="appt-card absolute inset-x-1 top-6 h-[46px] rounded-lg bg-secondary text-on-secondary p-2 flex flex-col justify-between shadow-sm cursor-pointer hover:brightness-110 transition-all z-10" data-age="22" data-alert="No known allergies. Anxiety regarding local anesthesia injections." data-avatar="placeholder" data-cost="$140" data-dentist="Dr. Marc Alami" data-gender="Female" data-id="PT-95408" data-name="Sophia Martinez" data-operatory="Operatory 2" data-status="Waiting Room" data-time="11:30 AM - 12:00 PM" data-type="New Patient Comprehensive Consultation">
+<div class="flex items-center justify-between leading-tight">
+<span class="font-label-md text-label-md truncate">Sophia Martinez</span>
+<span class="text-[10px] bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold">New Patient</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-surface-container">
+<span class="truncate">Consultation &amp; Panorex</span>
+<span class="font-mono">30m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 12:00 PM (Lunch Break slot) -->
+<div class="grid grid-cols-12 h-14 bg-surface-container-low/40">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">12:00 PM</div>
+<div class="col-span-10 flex items-center justify-center text-text-secondary font-label-sm text-label-sm gap-2">
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+<span>Sterilization Cycle &amp; Staff Turnaround Break</span>
+</div>
+</div>
+<!-- 01:00 PM -->
+<div class="grid grid-cols-12 h-20 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">01:00 PM</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+<!-- 02:00 PM -->
+<div class="grid grid-cols-12 h-24 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">02:00 PM</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10">
+<!-- Appointment: James O'Connor (02:00 - 03:00) -->
+<div class="appt-card absolute inset-x-1 top-1 h-[80px] rounded-lg bg-primary-container text-on-primary p-2.5 flex flex-col justify-between shadow-sm cursor-pointer hover:brightness-110 transition-all z-10" data-age="61" data-alert="Type II Diabetic (HbA1c 6.8). Post-surgical healing protocol active." data-avatar="placeholder" data-cost="$310" data-dentist="Dr. Sarah Jenkins" data-gender="Male" data-id="PT-64119" data-name="James O'Connor" data-operatory="Operatory 1" data-status="Confirmed" data-time="02:00 PM - 03:00 PM" data-type="Dental Implant Follow-up &amp; Torque Test">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md truncate block">James O'Connor</span>
+<span class="text-[12px] text-primary-fixed-dim">Dental Implant Follow-up</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-success-tint text-tertiary-container font-label-sm text-[11px] font-semibold">Confirmed</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-primary-fixed">
+<span>Implant Stage 2 Check</span>
+<span class="font-mono">60 min</span>
+</div>
+</div>
+</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+<!-- 03:00 PM to 05:00 PM -->
+<div class="grid grid-cols-12 h-20 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">03:00 PM</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+<div class="grid grid-cols-12 h-20 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">04:00 PM</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+<div class="grid grid-cols-12 h-16 bg-surface">
+<div class="col-span-2 pr-4 pt-1 text-right font-mono text-[12px] text-text-secondary">05:00 PM</div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+<div class="col-span-5 relative p-1 bg-surface-container-low/10"></div>
+</div>
+</div>
+</div>
+<!-- Calendar Bottom Legend -->
+<div class="p-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-[12px] text-text-secondary">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-primary-container"></span> Dr. Jenkins</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-tertiary"></span> Dr. Marc Alami</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-secondary"></span> New Consultation</span>
+</div>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">verified</span>
+            Automated WhatsApp sync active
+          </span>
+</div>
+</div>
+<!-- Right Context Side-Panel: Selected Appointment Summary (4 Columns on desktop) -->
+<div class="xl:col-span-4 bg-surface rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Appointment Detail</h2>
+<p class="font-label-sm text-label-sm text-text-secondary">Real-time operatory inspect</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-warning-tint text-warning font-label-sm text-[12px] font-bold" id="detailStatusBadge">
+            In Chair
+          </span>
+</div>
+<!-- Patient Header Card -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center gap-space-md">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close-up professional headshot of male dental patient in clinical reception lighting, crisp sharpness, soft modern background, neutral authentic expression." id="detailAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6RLdixG68N0G5jUc891TiROMp5yjVulGU9P5rWvmZjCD8k61AI-lJp2dBLsIqM25lG1pvU_-s8K0fix8-V2btwN_DN-po_i2tynPI-vx8rCoQpjG6lGzo2g_QTnsaQaihd9E54K2lbCXt5FEHj9jfo_oOCfJ3iGT19Q0WFJaJKImwXx3A5uMoE9s9s8c7twP9cN4YrZ5g9roY4eQ6K4jNjMUe_MlWhntghI50hMeJoSU6qRXSpOpEdQ"/>
+<div class="flex-1 min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-text-primary truncate" id="detailPatientName">David Miller</h3>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-text-secondary">
+<span class="font-mono text-primary font-semibold" id="detailPatientId">PT-77631</span>
+<span>•</span>
+<span id="detailPatientDemographics">54 yrs, Male</span>
+</div>
+</div>
+</div>
+<!-- High-Priority Alert Banner -->
+<div class="p-space-md rounded-xl bg-danger-tint text-danger flex items-start gap-space-sm" id="detailAlertBox">
+<span class="material-symbols-outlined text-[20px] text-danger flex-shrink-0 mt-0.5">warning</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-danger">Clinical Alert</p>
+<p class="font-body-md text-body-md text-on-surface mt-0.5 text-[13px] leading-snug" id="detailAlertText">
+              Hypertensive (Pre-op BP 138/88). Use Epinephrine 1:200,000 only.
+            </p>
+</div>
+</div>
+<!-- Operational Specifications Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-text-secondary uppercase font-semibold block">Scheduled Time</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5 block" id="detailTime">10:15 - 11:15 AM</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-text-secondary uppercase font-semibold block">Location</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5 block" id="detailOperatory">Operatory 1</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-text-secondary uppercase font-semibold block">Primary Doctor</span>
+<span class="font-label-md text-label-md text-primary font-semibold mt-0.5 block truncate" id="detailDentist">Dr. Sarah Jenkins</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-text-secondary uppercase font-semibold block">Estimated Fee</span>
+<span class="font-label-md text-label-md text-text-primary font-bold mt-0.5 block" id="detailCost">$920.00</span>
+</div>
+</div>
+<!-- Treatment Plan Quick Status -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-text-secondary">Procedure Target</span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">FDI #26 (Upper Left 1st Molar)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium" id="detailProcedure">
+            Root Canal Treatment &amp; Rotary Instrumentation
+          </p>
+<!-- Mini Odontogram Tooth Map Representation -->
+<div class="mt-2 pt-2 flex items-center justify-between bg-surface p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-primary-tint text-primary flex items-center justify-center font-mono font-bold text-xs">
+                26
+              </div>
+<div class="flex flex-col">
+<span class="text-[12px] font-bold text-text-primary">Canals Located: 3/3</span>
+<span class="text-[11px] text-emerald-700 font-semibold">Pulp extirpation complete</span>
+</div>
+</div>
+<button class="text-primary hover:text-primary-hover font-label-sm text-[12px] font-semibold underline">
+              View Chart
+            </button>
+</div>
+</div>
+<!-- WhatsApp Interaction Capsule -->
+<div class="p-space-sm bg-success-tint rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-2xs text-tertiary">
+<span class="material-symbols-outlined text-[20px] text-emerald-700">chat</span>
+<div>
+<span class="font-label-sm text-label-sm font-bold block text-emerald-900 leading-tight">WhatsApp Notification</span>
+<span class="text-[11px] text-emerald-700">Arrival confirmed at 10:08 AM</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-200 text-emerald-900 font-label-sm text-[11px] font-bold">
+            Delivered
+          </span>
+</div>
+<!-- Chairside Clinical Action Triggers -->
+<div class="flex flex-col gap-space-xs mt-2">
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-11 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Mark Arrived</span>
+</button>
+<button class="h-11 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+<span>Reschedule</span>
+</button>
+</div>
+<button class="w-full h-11 rounded-lg bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">folder_shared</span>
+<span>Open Patient Clinical File</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-surface hover:bg-surface-container-low text-text-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Generate &amp; Send Invoice</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Booking Requests Alert Footer Tray -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold">
+          4
+        </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Incoming Online &amp; WhatsApp Requests Need Verification</h4>
+<p class="font-body-md text-body-md text-text-secondary text-[13px]">Latest request: Mark Jansen requested Emergency Toothache Consultation for 03:30 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          Dismiss
+        </button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-label-md transition-colors">
+          Review Requests (4)
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Vanilla JS micro-interactions for selecting appointments and toggling filters -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const apptCards = document.querySelectorAll('.appt-card');
+    
+    // Panel Elements
+    const nameEl = document.getElementById('detailPatientName');
+    const idEl = document.getElementById('detailPatientId');
+    const demoEl = document.getElementById('detailPatientDemographics');
+    const alertBox = document.getElementById('detailAlertBox');
+    const alertTextEl = document.getElementById('detailAlertText');
+    const timeEl = document.getElementById('detailTime');
+    const operatoryEl = document.getElementById('detailOperatory');
+    const dentistEl = document.getElementById('detailDentist');
+    const costEl = document.getElementById('detailCost');
+    const procedureEl = document.getElementById('detailProcedure');
+    const statusBadge = document.getElementById('detailStatusBadge');
+
+    apptCards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Clear active rings
+        apptCards.forEach(c => c.classList.remove('ring-2', 'ring-warning-cta'));
+        card.classList.add('ring-2', 'ring-warning-cta');
+
+        // Extract metadata
+        const name = card.dataset.name;
+        const id = card.dataset.id;
+        const age = card.dataset.age;
+        const gender = card.dataset.gender;
+        const type = card.dataset.type;
+        const time = card.dataset.time;
+        const dentist = card.dataset.dentist;
+        const operatory = card.dataset.operatory;
+        const alert = card.dataset.alert;
+        const status = card.dataset.status;
+        const cost = card.dataset.cost;
+
+        // Apply to panel
+        if (nameEl) nameEl.textContent = name;
+        if (idEl) idEl.textContent = id;
+        if (demoEl) demoEl.textContent = `${age} yrs, ${gender}`;
+        if (timeEl) timeEl.textContent = time;
+        if (operatoryEl) operatoryEl.textContent = operatory;
+        if (dentistEl) dentistEl.textContent = dentist;
+        if (costEl) costEl.textContent = `${cost}.00`;
+        if (procedureEl) procedureEl.textContent = type;
+        if (statusBadge) statusBadge.textContent = status;
+
+        if (alertTextEl && alertBox) {
+          alertTextEl.textContent = alert;
+          if (alert.toLowerCase().includes('high alert') || alert.toLowerCase().includes('allergy')) {
+            alertBox.className = 'p-space-md rounded-xl bg-danger-tint text-danger flex items-start gap-space-sm';
+          } else {
+            alertBox.className = 'p-space-md rounded-xl bg-warning-tint text-warning flex items-start gap-space-sm';
+          }
+        }
+      });
+    });
+
+    // Practitioner Filter toggles
+    const filterBtns = document.querySelectorAll('.doctor-filter');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.className = 'doctor-filter px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+        });
+        btn.className = 'doctor-filter px-3 py-1.5 rounded-lg text-on-primary bg-primary-container font-label-sm text-label-sm shadow-sm transition-all';
+      });
+    });
+  });
+</script></main></div></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "DentalCare Operatory Pro",
+  "description": "Comprehensive dental practice management and surgical operatory OS with real-time chairside scheduling, interactive Odontogram dental charting, DICOM radiology viewer, eRx prescription pad, treatment plans, and financial billing ledger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

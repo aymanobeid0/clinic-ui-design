@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#192f86", "tertiary-fixed-dim": "#8cd6ad", "surface-variant": "#e3e2e2", "on-error-container": "#93000a", tertiary: "#002918", "on-secondary-container": "#4f647d", "danger-tint": "#FEF3F2", warning: "#854D0E", "border-field": "#DEDEDE", "secondary-fixed": "#d1e4ff", error: "#ba1a1a", outline: "#757683", "error-container": "#ffdad6", "on-surface-variant": "#454652", danger: "#B42318", "surface-container-high": "#e8e8e8", "text-primary": "#111111", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#005234", "border-card": "#E5E5E5", "tertiary-fixed": "#a8f3c8", "surface-dim": "#dadada", "inverse-on-surface": "#f1f1f0", "on-error": "#ffffff", primary: "#001868", "on-tertiary-container": "#67b089", "on-background": "#1a1c1c", "on-primary": "#ffffff", "on-surface": "#1a1c1c", "on-primary-container": "#899cf8", "outline-variant": "#c5c5d3", "text-secondary": "#666666", "success-tint": "#ECFDF3", "tertiary-container": "#004128", "warning-cta": "#FACC15", "surface-container-low": "#f4f3f3", secondary: "#4b6079", "primary-tint": "#EEF1FA", "surface-container": "#eeeeee", "secondary-container": "#cce2ff", "surface-tint": "#4458af", "surface-container-lowest": "#ffffff", "inverse-primary": "#b9c3ff", "on-primary-fixed": "#001257", "on-secondary-fixed": "#041d32", "primary-hover": "#14266D", "on-primary-fixed-variant": "#2b3f95", "secondary-fixed-dim": "#b3c8e5", "warning-tint": "#FFFAEB", "surface-bright": "#faf9f9", "surface-container-highest": "#e3e2e2", background: "#faf9f9", surface: "#faf9f9", "border-divider": "#EDEDED", "on-secondary-fixed-variant": "#334860", "on-tertiary-fixed": "#002112", "inverse-surface": "#2f3131", "on-secondary": "#ffffff", "primary-fixed": "#dde1ff", "primary-fixed-dim": "#b9c3ff"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-lg": "1.25rem", gutter: "1rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-2xl": "1.75rem", "space-xl": "1.5rem", "margin-desktop": "1.75rem", "space-xs": "0.5rem", "space-sm": "0.75rem", margin: "1rem", "space-2xs": "0.25rem", "space-3xl": "2rem"}, fontFamily: {"body-lg-medium": ["Inter"], "label-md": ["Inter"], "body-md-medium": ["Inter"], display: ["Inter"], "display-mobile": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], headline: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"body-lg-medium": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "500"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "body-md-medium": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "500"}], display: ["30px", {lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-mobile": ["26px", {lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "400"}], "headline-md": ["20px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-lg": ["24px", {lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600"}], "label-sm": ["13px", {lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500"}], "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "0", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0", fontWeight: "400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen" style="background-color: rgb(226, 232, 240);"><aside class="fixed left-0 top-0 h-full w-20 z-50 flex flex-col items-center py-space-xl bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgb(255, 255, 255); border-right: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.06) 2px 0px 12px;"><div class="flex items-center justify-center mb-space-2xl"><div class="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><img alt="Clean geometric minimalist dental clinic logo mark, an abstract tooth silhouette combined with subtle medical cross and gentle wave, vector graphic style, deep royal blue #192F86 and crisp white, elegant medical branding. Design context: - Primary color: #192f86
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VxebqNPzQKoreh1mfD3zBnwC4Q6SVLjBgHXnxqPjP4C7lPYbbnb6-UvqG68Oso5qVCNYoEpjr545v_O2WaNhtfqj-mIkS1xwPEsb69m4gV3XkaJc4KksayohY0qHZTS56BXGuwrOs6s-lNHODVzfn7NenCo6N1AJlJyInRGpq-GYqpVeuUPHN1sv-rbBLXMHDe4Bpcs7Gzg2KqgRT910xe1-_k10sqBD36SFj4rznphkY_5o511I3g26AV"/></div></div><nav class="flex-1 flex flex-col items-center gap-space-sm w-full px-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments" href="#" title="Calendar &amp; Appointments"><span class="material-symbols-outlined text-[24px]">calendar_today</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patient-records" href="#" title="Patients &amp; Clinical Records"><span class="material-symbols-outlined text-[24px]">group</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="imaging-diagnostics" href="#" title="Dental Imaging &amp; Diagnostics"><span class="material-symbols-outlined text-[24px]">medical_services</span></a><a aria-current="page" class="flex items-center justify-center w-12 h-12 rounded-xl transition-all bg-primary-container text-on-primary font-bold shadow-sm" data-path="treatment-plans" href="#" title="Treatment Plans &amp; Procedures"><span class="material-symbols-outlined text-[24px]">dentistry</span></a><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="billing-ledger" href="#" title="Billing &amp; Ledger"><span class="material-symbols-outlined text-[24px]">payments</span></a></nav><div class="flex flex-col items-center gap-space-sm w-full px-space-xs pt-space-md"><a class="flex items-center justify-center w-12 h-12 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#" title="Clinic Settings"><span class="material-symbols-outlined text-[24px]">settings</span></a></div></aside><div class="pl-20 min-h-screen flex flex-col"><header class="fixed top-0 left-20 right-0 h-16 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgba(255, 255, 255, 0.95); border-bottom: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.06) 0px 2px 10px;"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-label-md text-label-md text-text-primary tracking-tight">DENTAL CLINIC OPERATORY</span><span class="font-label-sm text-label-sm text-text-secondary">Precision Surgical Suite A-1</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-1.5 rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.04)] gap-space-xs"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none w-56 lg:w-72" placeholder="Search chart #, patient, procedure..." type="text"/></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Emergency Flag" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-danger-tint hover:text-danger transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">emergency</span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1X792V6pCG92FPz1EHpXt2jI_foO_q56t6XUW43-7SGCmPSlNRsBRlrl7kZY5DPIX3vli43QwlWUVoIq1O_dblmER62gY_zVH8hM7tpjSnh3tN6DBfecQeBKp4f0Y7I2VA8SAe_tUdD6rEFH2w91mW2-w4PcKxLp-k4ugIfF8o8U9qez1rS317JF8KR6IPiNDB6lnIxlCd13w7Mv9qzQrr1XVxp11tjEpH_ni2iv4YwOJGvmSyLA30eSpI"/><div class="hidden sm:flex flex-col"><span class="font-label-md text-label-md text-text-primary">Dr. Evelyn Vance</span><span class="font-label-sm text-label-sm text-text-secondary">Lead Orthodontist</span></div></div></div></div></header><main class="relative pt-16 flex-1 w-full bg-background" style="background-color: rgb(226, 232, 240);"><div class="p-space-xl max-w-[1380px] mx-auto w-full"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Patient Header Card -->
+<section class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-primary-container/10" data-alt="Close up professional portrait of smiling patient Julia Smith, warm natural studio lighting, gentle medical clinic background, elegant dental hygiene patient portrait, soft neutral palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk9R7yYBFmUNLZMnxtrUWbn6Fc5Yu1ZfmLKelKNgOPJE1OQt3tVuL9IINynLCsK0FW6wVdBTo7prpmkBjSftjOds299fYKo0M50Pksqthk2z34Gy-6CeyC4aDfPNIZfpOxSO3jTZRPdarkmS-F_Ke6td2N50m6W3gHoaCsJnB6aMJ5vl3UruVUukFlBk7UvO8j5XAVCBJgy_X_BLwwvg3QR1iflqtK96b7xRnv8DuQWtKCE-X2tFVMUA"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 bg-tertiary-container rounded-full ring-2 ring-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-tertiary-fixed">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary">#P6L272</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-2 py-0.5 rounded-full">Active</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight truncate">Julia Smith</h1>
+<div class="flex items-center gap-space-sm text-text-secondary font-label-sm text-label-sm">
+<span class="">DOB: 01.28.1994 (31 y/o)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-danger flex items-center gap-1 font-body-md-medium text-body-md-medium">
+<span class="material-symbols-outlined text-[14px]">warning</span> Penicillin Allergy
+          </span>
+</div>
+</div>
+</div>
+<!-- Quick Meta Information Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-space-xl gap-y-space-xs text-left">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Primary Provider</span>
+<span class="font-body-md-medium text-body-md-medium text-text-primary">Dr. Peter Deck, DDS</span>
+<span class="font-label-sm text-label-sm text-outline">(888) 452-1505</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Primary Insurance</span>
+<span class="font-body-md-medium text-body-md-medium text-text-primary">Delta Dental PPO</span>
+<span class="font-label-sm text-label-sm text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary-container">verified</span> Active • Exp 06.26
+        </span>
+</div>
+<div class="flex flex-col col-span-2 md:col-span-1">
+<span class="font-label-sm text-label-sm text-text-secondary">Appointment Window</span>
+<span class="font-body-md-medium text-body-md-medium text-text-primary">Next: Oct 12, 10:30 AM</span>
+<span class="font-label-sm text-label-sm text-outline">Operatory Suite A-1</span>
+</div>
+</div>
+<!-- Actions & Communication Buttons -->
+<div class="flex items-center gap-space-xs w-full xl:w-auto justify-end">
+<button class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors" title="View Patient Chart" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</button>
+<button class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors" title="Medical History Log" type="button">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors" title="Send SMS Update" type="button">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</button>
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-space-xs px-space-md h-11 rounded-lg bg-primary-container text-on-primary hover:bg-primary-hover font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Contact Patient</span>
+</button>
+</div>
+</section>
+<!-- Horizontal Patient Sub-navigation Tabs -->
+<div class="bg-surface rounded-xl p-space-xs shadow-sm flex items-center overflow-x-auto no-scrollbar gap-1" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span class="">General</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span class="">Clinical Photos</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span class="">Odontogram</span>
+</button>
+<!-- Active Treatment Plan Tab -->
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+<span class="">Treatment Plans (3)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+<span class="">Perio Probing</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="">eClaims &amp; Ledger</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">radiology</span>
+<span class="">3D CBCT Imaging</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span class="">Lab Orders</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span class="">Consent Documents</span>
+</button>
+</div>
+<!-- Primary Content Grid: 2 Columns (Timeline & Procedure Cards + Right Financial Summary) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Main Column: Phases Timeline & Procedure Details (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Plan Header & Phase Stepper -->
+<section class="bg-surface rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" style="background-color: #FFFFFF; border: 1px solid #CBD5E1; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b-0">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-primary-tint text-primary px-2.5 py-0.5 rounded-full">Comprehensive Rehab #TP-2025-09</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Rev. 2.1</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-text-primary mt-1">Multi-Stage Esthetic &amp; Restorative Reconstruction</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span class="">Edit Plan</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">Add Code</span>
+</button>
+</div>
+</div>
+<!-- 4-Phase Chronological Stepper Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Phase 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.05) 0px 2px 8px;">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary">PHASE 1</span>
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">check_circle</span>
+</div>
+<div>
+<p class="font-body-md-medium text-body-md-medium text-text-primary">Urgent / Pain Relief</p>
+<p class="font-label-sm text-label-sm text-tertiary-container mt-0.5 font-medium">100% Completed</p>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-tertiary-container h-full w-full rounded-full"></div>
+</div>
+</div>
+<!-- Phase 2: Active -->
+<div class="bg-primary-tint/60 p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between" style="border: 1.5px solid rgb(25, 47, 134); box-shadow: rgba(25, 47, 134, 0.12) 0px 2px 8px;">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">PHASE 2 (CURRENT)</span>
+<span class="material-symbols-outlined text-primary-container text-[18px] animate-spin" style="animation-duration: 4s;">autorenew</span>
+</div>
+<div>
+<p class="font-body-md-medium text-body-md-medium text-text-primary">Restorative &amp; Endo</p>
+<p class="font-label-sm text-label-sm text-primary-container mt-0.5 font-semibold">In Progress (65%)</p>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-full w-[65%] rounded-full"></div>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.05) 0px 2px 8px;">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary">PHASE 3</span>
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_clock</span>
+</div>
+<div>
+<p class="font-body-md-medium text-body-md-medium text-text-primary">Crown &amp; Bridge</p>
+<p class="font-label-sm text-label-sm text-text-secondary mt-0.5">Scheduled Oct 12</p>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-outline h-full w-0 rounded-full"></div>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between opacity-80" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.05) 0px 2px 8px;">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary">PHASE 4</span>
+<span class="material-symbols-outlined text-outline text-[18px]">lock_clock</span>
+</div>
+<div>
+<p class="font-body-md-medium text-body-md-medium text-text-primary">Perio Maintenance</p>
+<p class="font-label-sm text-label-sm text-text-secondary mt-0.5">Pending Phases 1-3</p>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-outline h-full w-0 rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Procedure Cards Grouped by Phase -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Active Procedures &amp; Interventions</h3>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">3 Clinical Items Tracked</span>
+</div>
+<!-- Procedure 1: Tooth #11 Endodontic Therapy (Completed) -->
+<article class="bg-surface rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col md:flex-row md:items-center justify-between gap-space-md" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-start gap-space-md">
+<!-- Tooth Avatar/Identifier Badge -->
+<div class="w-14 h-14 rounded-xl bg-tertiary-container/10 flex flex-col items-center justify-center flex-shrink-0 text-tertiary-container">
+<span class="font-label-sm text-[11px] font-bold tracking-wider uppercase">TOOTH</span>
+<span class="font-headline-md text-headline-md leading-tight">#11</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Root Canal Therapy &amp; Post/Core Prep</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-md text-on-surface-variant font-mono">CDT D3330</span>
+<span class="font-label-sm text-label-sm bg-success-tint text-tertiary-container px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Completed
+                </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+                Apex locator verification (21.5mm), gutta-percha obturation &amp; dual-cure core buildup.
+              </p>
+<div class="flex flex-wrap items-center gap-space-md text-text-secondary font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">stethoscope</span> Dr. Peter Deck, DDS
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">event_available</span> Completed Sept 28, 2025
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">shield</span> Delta PPO (Paid $680)
+                </span>
+</div>
+</div>
+</div>
+<!-- Price & Action Area -->
+<div class="flex md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-t-0 pt-space-xs md:pt-0 flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">$850.00</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-medium">Copay Settled ($170)</span>
+<button class="mt-2 text-primary hover:text-primary-hover font-label-sm text-label-sm inline-flex items-center gap-1" type="button">
+<span class="">Post-op Radiograph</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Procedure 2: Tooth #26 Crown (Scheduled / Pre-auth) -->
+<article class="bg-surface rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col md:flex-row md:items-center justify-between gap-space-md" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-tint flex flex-col items-center justify-center flex-shrink-0 text-primary-container">
+<span class="font-label-sm text-[11px] font-bold tracking-wider uppercase">TOOTH</span>
+<span class="font-headline-md text-headline-md leading-tight">#26</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Monolithic Zirconia Crown (Full Cast)</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-md text-on-surface-variant font-mono">CDT D2740</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified_user</span> Pre-auth Approved
+                </span>
+<span class="font-label-sm text-label-sm bg-surface-container-low text-text-secondary px-2 py-0.5 rounded-full">Shade A2 Vita</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+                Pre-op 3D digital scan sent to Glidewell Labs. Scheduled for delivery and definitive bonding.
+              </p>
+<div class="flex flex-wrap items-center gap-space-md text-text-secondary font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1 text-primary-container font-medium">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span> Oct 12, 2025 • 10:30 AM
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">chair</span> Chair 2 (Dr. Deck)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">inventory_2</span> Lab Case #GW-8841 Received
+                </span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-t-0 pt-space-xs md:pt-0 flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">$950.00</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Ins Est: $600.00</span>
+<div class="flex items-center gap-space-xs mt-2">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-primary font-label-sm text-label-sm transition-colors" type="button">
+                Reschedule
+              </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary-hover font-label-sm text-label-sm transition-colors" type="button">
+                Confirm
+              </button>
+</div>
+</div>
+</article>
+<!-- Procedure 3: Quadrant 1 Scaling & Root Planing (In Progress) -->
+<article class="bg-surface rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col md:flex-row md:items-center justify-between gap-space-md" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-warning-tint flex flex-col items-center justify-center flex-shrink-0 text-warning">
+<span class="font-label-sm text-[11px] font-bold tracking-wider uppercase">QUAD</span>
+<span class="font-headline-md text-headline-md leading-tight">Q1</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Deep Scaling &amp; Root Planing (4+ Teeth)</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-md text-on-surface-variant font-mono">CDT D4341</span>
+<span class="font-label-sm text-label-sm bg-warning-tint text-warning px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">pending</span> In-Progress (1/2 Sessions)
+                </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+                Pocket depths 5-6mm distal UR3 to UR7. Ultrasonic debridement with localized chlorhexidine flush.
+              </p>
+<div class="flex flex-wrap items-center gap-space-md text-text-secondary font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">person_outline</span> Sarah Lin, RDH
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">vaccines</span> 2% Lidocaine w/ 1:100k Epi (1.8mL)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">replay</span> Second visit required
+                </span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-t-0 pt-space-xs md:pt-0 flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">$280.00</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Ins Est: $170.00</span>
+<button class="mt-2 text-primary hover:text-primary-hover font-label-sm text-label-sm inline-flex items-center gap-1" type="button">
+<span class="">View Perio Chart</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Clinical Operatory Notes / Chairside Observations -->
+<section class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">clinical_notes</span>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Chairside Operatory Notes</h4>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Updated today by Dr. Deck</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg text-body-md text-text-primary">
+          Patient tolerated endodontic instrumentation well under local anesthesia. Advised patient regarding post-op sensitivity on tooth #11. Occlusion was checked and clear in centric/lateral excursion. Temporary Cavit restoration placed. Ready for zirconia crown seating on Oct 12.
+        </div>
+</section>
+</div>
+<!-- Right Summary Panel: Financials, Consent & Approvals (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Financial Ledger Overview Card -->
+<div class="bg-surface rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-semibold">Financial Breakdown</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">Plan Estimate</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-tint flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+</div>
+<!-- Metric Big Stats -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary">Gross Treatment Cost</span>
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-text-primary">$2,080.00</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-text-secondary">3 Procedures</span>
+</div>
+</div>
+<!-- Ledger Progress Bar / Distribution Chart -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-tertiary-container font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Ins. Coverage (70%)
+            </span>
+<span class="text-primary-container font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Patient Out-of-Pocket (30%)
+            </span>
+</div>
+<!-- Dual Tonal Bar -->
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-tertiary-container h-full w-[70%]" title="Insurance: $1,450"></div>
+<div class="bg-primary-container h-full w-[30%]" title="Patient: $630"></div>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="flex flex-col gap-space-sm text-body-md text-text-primary">
+<div class="flex items-center justify-between py-1">
+<span class="text-text-secondary">Total Procedure Fees</span>
+<span class="font-medium">$2,080.00</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Est. Delta PPO Benefit
+            </span>
+<span class="text-tertiary-container font-semibold">-$1,450.00</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="text-text-secondary">Deductible Applied</span>
+<span class="font-medium">$0.00 (Met)</span>
+</div>
+<div class="flex items-center justify-between py-2 pt-3 border-t-0 bg-primary-tint/50 px-space-sm rounded-lg">
+<span class="font-body-md-medium text-body-md-medium text-primary-container">Est. Patient Co-pay</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">$630.00</span>
+</div>
+</div>
+<!-- Financing Helper -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">credit_card</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-text-primary font-medium">CareCredit® Available</span>
+<span class="font-label-sm text-label-sm text-text-secondary">0% APR for 12 mos: ~$52.50/mo</span>
+</div>
+</div>
+</div>
+<!-- Legal Consent & Signatures Status Card -->
+<div class="bg-surface rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Consent &amp; Authorizations</h4>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">task_alt</span>
+</div>
+<div class="bg-success-tint/60 rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Signed Patient Consent</span>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-surface px-2 py-0.5 rounded-full font-medium shadow-2xs">e-Signed</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-secondary">
+            Informed consent for Crown #26 &amp; Endo #11 signed via iPad Chairside by Julia Smith on Sept 28, 2025 (IP: 192.168.1.42).
+          </p>
+</div>
+<!-- Quick Patient Export / Sharing Triggers -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-11 rounded-lg bg-primary-container text-on-primary hover:bg-primary-hover flex items-center justify-center gap-space-xs font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span class="">Print Treatment Proposal</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-primary flex items-center justify-center gap-space-xs font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">send_to_mobile</span>
+<span class="">Send Estimate to WhatsApp</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-surface hover:bg-surface-container-low text-text-secondary hover:text-text-primary flex items-center justify-center gap-space-xs font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">attach_email</span>
+<span class="">Email PDF to delta@claims.com</span>
+</button>
+</div>
+</div>
+<!-- Quick Operatory Readiness Checklist -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(203, 213, 225); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 12px;">
+<h4 class="font-label-md text-label-md text-text-primary">Next Appointment Preparation (Oct 12)</h4>
+<ul class="flex flex-col gap-2 font-label-sm text-label-sm text-text-secondary">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">check_circle</span>
+<span class="">Zirconia Crown from Glidewell in sterilization</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">check_circle</span>
+<span class="">Pre-medication (Amoxicillin) confirmed sent</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warning text-[16px]">radio_button_unchecked</span>
+<span class="">Patient SMS reminder pending 24hr auto-dispatch</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  // Simple interactive mock toggle for demoing state updates
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const text = btn.innerText.trim();
+      if (text.includes('Send to WhatsApp')) {
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined text-tertiary-container text-[18px]">done</span><span>Sent to +1 (888) 452-1505</span>';
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 2600);
+      }
+    });
+  });
+</script></div></main></div>
+</body></html>
